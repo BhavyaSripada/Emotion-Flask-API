@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: emotion-flask-api
+    env: python
+    runtime: python3.11.4 # Use the closest available version if 3.11.4 is not supported
+    buildCommand: |
+      pip install -r requirements.txt
+    startCommand: python main.py
+  
